@@ -1,7 +1,7 @@
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 
-export default function ({children}) {
+export default function Layout ({children}) {
     return (
         <>
             <Header />

@@ -5,7 +5,7 @@ export default function Header() {
         <header>
             <div className="container">
                 <NavLink to="/">
-                    <strong>Van Gogh Gallery</strong>
+                    <strong>Gallery</strong>
                 </NavLink>
             </div>
         </header>

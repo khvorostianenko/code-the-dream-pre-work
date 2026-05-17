@@ -1,16 +1,50 @@
-# React + Vite
+# van-gogh-gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React gallery that loads artwork data from the Art Institute of Chicago public API.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Node.js](https://nodejs.org/) (current LTS recommended)
+- npm (bundled with Node.js)
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone this repository and open the project folder.
 
-## Expanding the ESLint configuration
+2. Install dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   npm install
+   ```
+
+3. Configure environment variables. Copy the example file and edit `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Vite only exposes variables whose names start with `VITE_` to the app.
+
+## Environment variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `VITE_AIC_USER_AGENT` | Yes (for courtesy / API policy) | Identify your app and a contact, e.g. `project-name (you@example.com)`. Replace the placeholder in `.env`. |
+
+## Run locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Then open **http://localhost:5173** in your browser (default Vite port).
+
+## Other commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run build` | Production build to `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint |

@@ -27,9 +27,9 @@ A small React gallery that loads artwork data from the Art Institute of Chicago 
 
 ## Environment variables
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `VITE_AIC_USER_AGENT` | Yes (for courtesy / API policy) | Identify your app and a contact, e.g. `project-name (you@example.com)`. Replace the placeholder in `.env`. |
+| Variable | Required                             | Description |
+|----------|--------------------------------------|-------------|
+| `VITE_AIC_USER_AGENT` | Optional (for courtesy / API policy) | Identify your app and a contact, e.g. `project-name (you@example.com)`. Replace the placeholder in `.env`. |
 
 ## Run locally
 
